@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #34fce8,#e1fc34);
+    text-align: center;
+}
+
+.card{
+    --clr:#34fce8;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container .card:hover{
+    height: 400px;
+    transition-duration: 0.5s;
+}
+
+.container .card .box {
+    position: absolute;
+    top:20px;
+    width: 300px;
+    height: 220px;
+    background: #4a4a4a;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.container .card:hover .box {
+    top:-100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+}
+
+.container .card:hover .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img{
+    width: 8cm;
+}
+
+.container .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.container .card:hover .content {
+    top: 100px;
+    height: 400px;
+}
+
+.container .card .content h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.container .card .content p {
+    color: #4a4a4a;
+    font-size: 1.05em;
+}
+
+.container .card .content a {
+    position: relative;
+    top:15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #7dae88;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 3.5cm;
+    height: 1cm;
+    padding-top: 20px;
+    padding-bottom: 45px;
+
+}
+
+.container .card .content a:hover {
+    width: 4.5cm;
+    transition: 0.5s;
+    background: #53785b;
+    border: 4px solid #3f3f3f;
+}
+
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.image-icon{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.image .user-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3f3f3f;
+}
+
+.image-icon .user-image-icon{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #3f3f3f;
+}
+
+
+.user-card{
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-card .text-data{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 100px;
+    background: #8acd32;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo{
+    font-size: 24px;
+    color: #292929;
+    text-decoration: none;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 17px;
+    color: #292929;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 1em;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.2s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.pear{
+    color: antiquewhite;
+    background: #34fce8;
+}
+
+
+.input-container{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font:
+      1.2rem 'Poppins';
+    }
+.input-label{
+    margin-right: 15px;
+}
+
+.select-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 250px;
+    height: 50px;
+}
+
+.select-box{
+    border:none;
+    appearance: none;
+    padding: 0 30px 0 15px;
+    color: #fff;
+    background-color: rgb(36, 53, 68);
+    font-size: 20px;
+    width: 281px;
+}
+
+.select-container .icon-container{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 140px;
+}
+
+.icon-container{
+    font-size: 30px;
+    color: white;
+    padding-right: 50px;
+}
+
+.visualizations{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#regions_div{
+    padding-top: 50px;
+    width: 900px;
+    height: 600px;
+    padding-bottom: 40px;
+}
+
+.piecharts{
+    width: 1200px;
+    display: flex;
+    align-items: center;
+}
+.piechart{
+    width: 500px;
+    height: 260px;
+}
+input,button{
+    border: 2px;
+    height: 28px;
+    padding: 5px;
+    margin: 5px;
+}
+button:hover{
+    opacity: 0.5;
+}
+
+.warpper, h1{
+    position: fixed;
+}
+
+@media (max-width: 800px) {
+    .wrapper{
+        position: static;
+        padding-top: 150px;
+    }
+    .warpper, h1{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    #regions_div{
+    width: 500px;
+    }
+    .piecharts{
+        width: 350px;
+        display: block;
+    }
+
+}
+
+#sheet{
+    object-fit: cover;
+}
+
+.echoes{
+    text-align: center;
+    padding-top: 20px;
+}

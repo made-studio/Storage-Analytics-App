@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkylark</title>
+    <link rel="stylesheet" type="text/css" href="case.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><i class='bx bxs-pear'></i>Äpple AB</a>
+        <nav class="navbar">
+            <a href="kalkylark.html">Kalkylark</a>
+            <a href="analys.php">Analys</a>
+        </nav>
+        <a href="user.php">
+            <div class="image-icon">
+                <img src="istockphoto-1130884625-612x612.jpg" alt="profile-pic" class="user-image-icon">
+            </div>
+        </a>
+    </header>
+    <div class="container-form">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbzIc0ENja3fzx0qrMlCHS1-622haM0bViG1w5NhrYCf-TOKD44O413wxX2b1tIjDG_B/exec" name="contanct-form">
+            <h4>Exportera till excel</h4>
+            <input type="text" name="produkt" placeholder="Produkt">
+            <input type="text" name="avdelning" placeholder="Avdelning">
+            <input type="number" name="antal" placeholder="Antal">
+            <input type="submit" value="submit" id="submit">
+        </form>
+   
+    <form method="post" action="http://localhost:3000/index.php?">
+        <div class="input-container">
+            <label for="input-article" class="input-label">Lägg till artiklar (-100 till 100):</label>
+            <input type="number" id="input-article" name="input-article" min="-100" max="100" />
+            </div>
+        <div class="select-container">
+            <select name="selectedOption" class="select-box">
+                <option value="">Välj ett alternativ</option>
+                <option value="jTelefon">jTelefon</option>
+                <option value="jPlatta">jPlatta</option>
+                <option value="Päronklocka">Päronklocka</option>
+            </select>
+            <div class="icon-container">
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        <div class="select-container">
+            <select name="selectedOption2" class="select-box">
+                <option value="">Välj ett alternativ</option>
+                <option value="Cupertino">Cupertino</option>
+                <option value="Norrköping">Norrköping</option>
+                <option value="Frankfurt">Frankfurt</option>
+            </select>
+            <div class="icon-container">
+                <i class="fa fa-caret-down"></i>
+            </div>
+        </div>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- Replace -->
+    </div>
+    <script src="Google Sheet.js"></script>
+</body>
+</html>

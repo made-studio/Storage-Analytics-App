@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="case.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html" class="logo"><i class='bx bxs-pear'></i>Äpple AB</a>
+        <nav class="navbar">
+            <a href="kalkylark.html">Kalkylark</a>
+            <a href="analys.php">Analys</a>
+        </nav>
+        <a href="user.html">
+            <div class="image-icon">
+                <img src="istockphoto-1130884625-612x612.jpg" alt="profile-pic" class="user-image-icon">
+            </div>
+        </a>
+    </header>
+    <form action="http://localhost:3000/login.php" method="post">
+        <h2>LOGIN</h2>
+        <label for="uname">User Name</label>
+        <input type="text" name="uname" placeholder="Username">
+        <label for="password">Password</label>
+        <input type="text" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
