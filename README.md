@@ -3,7 +3,7 @@
 
 ## Beskrivning
 Webbappen är ett alternativ till att hantera lagret i excel eller google sheets vilket inte är skalbart. På webben kan istället företaget ändra
-lagerstatus på produkter och sammanställa vizualiseringar av lagret.
+lagerstatus på produkter och sammanställa vizualiseringar av lagret, alla uppdateringar av lagret sparas i SQL. 
 
 Flera olika användare sparas i en SQL databas, olika användare har olika behörigheter, desto högre position desto mer behörigheter.
 
